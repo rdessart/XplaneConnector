@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplaneConnector", "XplaneConnector\XplaneConnector\XplaneConnector.csproj", "{C2B6AFBF-732D-43E9-ABFC-AE85249EDD2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplaneConnector.Android", "XplaneConnector\XplaneConnector.Android\XplaneConnector.Android.csproj", "{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplaneConnector.Desktop", "XplaneConnector\XplaneConnector.Desktop\XplaneConnector.Desktop.csproj", "{23C46EC5-4B58-43D7-8D77-AE1461E20FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplaneConnector.iOS", "XplaneConnector\XplaneConnector.iOS\XplaneConnector.iOS.csproj", "{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XplaneConnector.Browser", "XplaneConnector\XplaneConnector.Browser\XplaneConnector.Browser.csproj", "{7FCBCA88-688E-4A9F-BA5A-3AB7C09BECDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B6AFBF-732D-43E9-ABFC-AE85249EDD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B6AFBF-732D-43E9-ABFC-AE85249EDD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B6AFBF-732D-43E9-ABFC-AE85249EDD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B6AFBF-732D-43E9-ABFC-AE85249EDD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8360B6-CCD4-4F55-A407-710B29D5A5C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{23C46EC5-4B58-43D7-8D77-AE1461E20FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C46EC5-4B58-43D7-8D77-AE1461E20FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C46EC5-4B58-43D7-8D77-AE1461E20FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C46EC5-4B58-43D7-8D77-AE1461E20FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D3A208-FD3A-42AB-B55B-F3BC6138E0B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7FCBCA88-688E-4A9F-BA5A-3AB7C09BECDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCBCA88-688E-4A9F-BA5A-3AB7C09BECDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCBCA88-688E-4A9F-BA5A-3AB7C09BECDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCBCA88-688E-4A9F-BA5A-3AB7C09BECDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9735B33-E268-4DD7-B831-3E594436980E}
+	EndGlobalSection
+EndGlobal
