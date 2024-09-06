@@ -3,14 +3,35 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:XplaneConnector.ViewModels"
+			 xmlns:mod="using:XplaneConnector.Models"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="XplaneConnector.Views.MainView"
              x:DataType="vm:MainViewModel">
   <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
+	<DockPanel>
+		<Grid DockPanel.Dock="Bottom" Background="DarkGray">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<Label Content="Connection" />
+				<Rectangle Width="25" Fill="Green" />
+			</StackPanel>
+		</Grid>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		<SplitView IsPaneOpen="True" OpenPaneLength="150" DisplayMode="Inline" Background="LightGray">
+			<SplitView.Pane>
+				<ListBox ItemsSource="{Binding Pages}" 
+						 SelectedItem="{Binding SelectedPage}" 
+						 SelectionMode="Single"
+						 HorizontalAlignment="Stretch">
+					<ListBox.ItemTemplate>
+						<DataTemplate x:DataType="mod:PageModel">
+							<Label Content="{Binding Caption}" HorizontalAlignment="Center" />
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</SplitView.Pane>
+			<TransitioningContentControl Content="{Binding DisplayedViewModel}" />
+		</SplitView>
+	</DockPanel>
 </UserControl>

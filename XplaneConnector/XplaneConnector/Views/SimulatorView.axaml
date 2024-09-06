@@ -1,0 +1,31 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:XplaneConnector.ViewModels"
+			 xmlns:mod="using:XplaneConnector.Models"
+			 
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="XplaneConnector.Views.SimulatorView"
+			 x:DataType="vm:SimulatorViewModel"
+			 x:CompileBindings="True">
+	<Grid RowDefinitions="auto,*">
+		<Label Grid.Row="0" FontSize="22" Content="Availables Simulators" HorizontalAlignment="Center" />
+		<ListBox Grid.Row="1" ItemsSource="{Binding Beacons}">
+			<ListBox.ItemTemplate>
+				<DataTemplate x:Class="mod:Network:SimulatorBeaconModel">
+					<Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,*,*">
+						<Label Grid.Column="0" Grid.Row="0" Content="{Binding Author}" />
+						<Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Content="{Binding Description}" />
+						<Label Grid.Column="0" Grid.Row="1" Content="{Binding IPAddress}" />
+						<Label Grid.Column="2" Grid.Row="1" Content="{Binding ListeningPort}" />
+						<Label Grid.Column="0" Grid.Row="2" Content="{Binding Simulator}" />
+						<Label Grid.Column="1" Grid.Row="2" Content="{Binding SimulatorSDKVersion}" />
+						<Label Grid.Column="2" Grid.Row="2" Content="{Binding SimulatorVersion}" />
+						<Label Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Content="{Binding TimeReadable}" />
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</Grid>
+</UserControl>
